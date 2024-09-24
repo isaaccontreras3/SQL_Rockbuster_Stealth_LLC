@@ -1,0 +1,49 @@
+# Data Wrangling:
+
+## Film Table: Checking for Duplicates
+
+SELECT film_id, title, description, release_year, language_id, rental_duration, 
+       rental_rate, length, replacement_cost, rating, last_update, special_features, fulltext,
+       COUNT(*)
+FROM film
+GROUP BY film_id, title, description, release_year, language_id, rental_duration, 
+         rental_rate, length, replacement_cost, rating, last_update, special_features, fulltext
+HAVING COUNT(*) > 1;
+
+### Film Table: Selecting Distinct Records
+
+SELECT DISTINCT film_id, title, description, release_year, language_id, rental_duration, 
+                rental_rate, length, replacement_cost, rating, last_update, special_features, fulltext
+FROM film;
+
+### Film Table: Checking for Missing Values
+
+SELECT * 
+FROM film
+WHERE film_id IS NULL OR title IS NULL OR description IS NULL OR release_year IS NULL 
+      OR language_id IS NULL OR rental_duration IS NULL OR rental_rate IS NULL 
+      OR length IS NULL OR replacement_cost IS NULL OR rating IS NULL OR last_update IS NULL 
+      OR special_features IS NULL OR fulltext IS NULL;
+
+## Customer Table: Checking for Duplicates
+
+SELECT customer_id, store_id, first_name, last_name, email, address_id, activebool, 
+       create_date, last_update, active, COUNT(*)
+FROM customer
+GROUP BY customer_id, store_id, first_name, last_name, email, address_id, activebool, 
+         create_date, last_update, active
+HAVING COUNT(*) > 1;
+
+## Customer Table: Selecting Distinct Records
+
+SELECT DISTINCT customer_id, store_id, first_name, last_name, email, address_id, 
+                activebool, create_date, last_update, active
+FROM customer;
+
+## Customer Table: Checking for Missing Values
+
+SELECT * 
+FROM customer
+WHERE customer_id IS NULL OR store_id IS NULL OR first_name IS NULL OR last_name IS NULL 
+      OR email IS NULL OR address_id IS NULL OR activebool IS NULL OR create_date IS NULL 
+      OR last_update IS NULL;

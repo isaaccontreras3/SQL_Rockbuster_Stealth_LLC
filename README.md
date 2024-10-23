@@ -34,5 +34,7 @@ The dataset includes comprehensive information on Rockbuster’s film inventory,
 
 View visualizations here: 
 
-[https://public.tableau.com/app/profile/isaac.contreras/viz/RockbusterStealths/Dashboard1](#Tableau-Viz).
-[https://public.tableau.com/app/profile/isaac.contreras/viz/Book2_17158069873540/Dashboard1](#Tableau-Viz).
+[View the Rockbuster Stealths Dashboard](https://public.tableau.com/app/profile/isaac.contreras/viz/RockbusterStealths/Dashboard1)
+
+[View the Second Dashboard](https://public.tableau.com/app/profile/isaac.contreras/viz/Book2_17158069873540/Dashboard1)
+
